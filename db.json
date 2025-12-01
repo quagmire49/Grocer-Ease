@@ -1,0 +1,901 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Basmati Rice (Premium)",
+      "description": "Premium long grain basmati rice, 1 kg pack",
+      "price": 4.5,
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&h=500&fit=crop",
+      "category": "Grains & Pulses",
+      "stock": 100,
+      "rating": 4.8,
+      "unit": "per kg",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.135Z"
+    },
+    {
+      "id": 2,
+      "name": "Toor Dal (Split Pigeon Peas)",
+      "description": "Fresh toor dal, rich in protein, 1 kg",
+      "price": 2.2,
+      "image": "https://img.freepik.com/premium-photo/toor-dal_57665-10232.jpg?size=626&ext=jpg",
+      "category": "Grains & Pulses",
+      "stock": 80,
+      "rating": 4.6,
+      "unit": "per kg",
+      "discountPercentage": 15,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 3,
+      "name": "Moong Dal (Split Green Gram)",
+      "description": "Organic moong dal, 1 kg pack",
+      "price": 2.5,
+      "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2023/08/moong-dal.jpg",
+      "category": "Grains & Pulses",
+      "stock": 75,
+      "rating": 4.7,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 4,
+      "name": "Chana Dal (Split Bengal Gram)",
+      "description": "Premium chana dal, 1 kg",
+      "price": 2.8,
+      "image": "https://healthynz.in/wp-content/uploads/2023/05/chana-dal.jpg",
+      "category": "Grains & Pulses",
+      "stock": 90,
+      "rating": 4.5,
+      "unit": "per kg",
+      "discountPercentage": 12,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 5,
+      "name": "Whole Wheat Atta",
+      "description": "Freshly milled whole wheat flour, 5 kg",
+      "price": 3.2,
+      "image": "https://spicetown.fi/wp-content/uploads/Aashirvaad-Whole-Wheat-Flour-2-kg.jpg",
+      "category": "Grains & Pulses",
+      "stock": 60,
+      "rating": 4.9,
+      "unit": "per pack",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 6,
+      "name": "Turmeric Powder (Haldi)",
+      "description": "Pure turmeric powder, 200g",
+      "price": 1.8,
+      "image": "https://cdn.shopify.com/s/files/1/1751/6601/products/Turmeric_DSC5296_800x.jpg?v=1527359087",
+      "category": "Spices & Condiments",
+      "stock": 120,
+      "rating": 4.7,
+      "unit": "per pack",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 7,
+      "name": "Red Chili Powder",
+      "description": "Spicy red chili powder, 200g",
+      "price": 1.5,
+      "image": "https://i.etsystatic.com/25828839/r/il/1a9552/2624936318/il_1588xN.2624936318_bewq.jpg",
+      "category": "Spices & Condiments",
+      "stock": 110,
+      "rating": 4.5,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 8,
+      "name": "Garam Masala",
+      "description": "Aromatic garam masala blend, 100g",
+      "price": 2.5,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/1/MT/JF/UM/144719704/garam-masala-front-1000x1000.png",
+      "category": "Spices & Condiments",
+      "stock": 95,
+      "rating": 4.8,
+      "unit": "per pack",
+      "discountPercentage": 20,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 9,
+      "name": "Cumin Seeds (Jeera)",
+      "description": "Whole cumin seeds, 200g",
+      "price": 2,
+      "image": "https://files.ekmcdn.com/asiancookshop/images/100g-cumin-seeds-whole-jeera-seed--(2)-15816-p.png?w=850&h=9999&v=5D34A5C8-161E-4445-A242-16579D2575EF",
+      "category": "Spices & Condiments",
+      "stock": 100,
+      "rating": 4.6,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 10,
+      "name": "Coriander Powder",
+      "description": "Fresh coriander powder, 200g",
+      "price": 1.6,
+      "image": "https://pushponline.com/wp-content/uploads/2023/03/Coriander-Powder-Pouch.webp",
+      "category": "Spices & Condiments",
+      "stock": 105,
+      "rating": 4.5,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 11,
+      "name": "Mustard Oil (Sarson Ka Tel)",
+      "description": "Pure mustard oil, 1 liter",
+      "price": 3.5,
+      "image": "https://m.media-amazon.com/images/I/61prXw2CkAL._SL1500_.jpg",
+      "category": "Oils & Ghee",
+      "stock": 70,
+      "rating": 4.7,
+      "unit": "per liter",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 12,
+      "name": "Desi Ghee (Clarified Butter)",
+      "description": "Pure desi ghee, 500g",
+      "price": 8.5,
+      "image": "https://www.meroreservation.com/shop/storage/customers/desi-ghee-800x800.png",
+      "category": "Oils & Ghee",
+      "stock": 50,
+      "rating": 4.9,
+      "unit": "per pack",
+      "discountPercentage": 18,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 13,
+      "name": "Coconut Oil",
+      "description": "Virgin coconut oil, 1 liter",
+      "price": 4.2,
+      "image": "https://www.catchnpack.pk/wp-content/uploads/2023/03/Parachute-Coconut-Oil-100ml.jpg",
+      "category": "Oils & Ghee",
+      "stock": 65,
+      "rating": 4.6,
+      "unit": "per liter",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 14,
+      "name": "Sunflower Oil",
+      "description": "Refined sunflower oil, 1 liter",
+      "price": 2.8,
+      "image": "https://s3.amazonaws.com/grocery-project/product_images/sunflower-oil-789819-gemini_xaFcIO4.jpeg",
+      "category": "Oils & Ghee",
+      "stock": 80,
+      "rating": 4.5,
+      "unit": "per liter",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 15,
+      "name": "Fresh Tomatoes",
+      "description": "Fresh red tomatoes, 1 kg",
+      "price": 1.2,
+      "image": "https://images-prod.healthline.com/hlcmsresource/images/AN_images/tomatoes-1296x728-feature.jpg",
+      "category": "Fresh Vegetables",
+      "stock": 150,
+      "rating": 4.5,
+      "unit": "per kg",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 16,
+      "name": "Onions",
+      "description": "Fresh onions, 1 kg",
+      "price": 0.8,
+      "image": "https://en-chatelaine.mblycdn.com/uploads/ench/2018/08/types-of-onions.jpg",
+      "category": "Fresh Vegetables",
+      "stock": 200,
+      "rating": 4.4,
+      "unit": "per kg",
+      "discountPercentage": 10,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 17,
+      "name": "Potatoes",
+      "description": "Fresh potatoes, 1 kg",
+      "price": 0.9,
+      "image": "https://cdn.britannica.com/89/170689-131-D20F8F0A/Potatoes.jpg",
+      "category": "Fresh Vegetables",
+      "stock": 180,
+      "rating": 4.5,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 18,
+      "name": "Okra (Bhindi)",
+      "description": "Fresh okra, 500g",
+      "price": 1.5,
+      "image": "https://citygreen.nz/wp-content/uploads/2021/04/okra-600x449.jpg",
+      "category": "Fresh Vegetables",
+      "stock": 60,
+      "rating": 4.6,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 19,
+      "name": "Brinjal (Baingan)",
+      "description": "Fresh brinjal, 1 kg",
+      "price": 1.3,
+      "image": "https://media1.onsugar.com/files/2013/01/03/1/192/1922195/6736b54e5bec7fab_shutterstock_61610440.xxxlarge/i/Eggplant.jpg",
+      "category": "Fresh Vegetables",
+      "stock": 70,
+      "rating": 4.5,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 20,
+      "name": "Bananas",
+      "description": "Fresh yellow bananas, 1 dozen",
+      "price": 1.5,
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500&h=500&fit=crop",
+      "category": "Fresh Fruits",
+      "stock": 120,
+      "rating": 4.6,
+      "unit": "per dozen",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 21,
+      "name": "Mangoes (Alphonso)",
+      "description": "Premium Alphonso mangoes, 1 kg",
+      "price": 4.5,
+      "image": "https://ichef.bbci.co.uk/images/ic/1200x675/p06hk0h6.jpg",
+      "category": "Fresh Fruits",
+      "stock": 30,
+      "rating": 4.9,
+      "unit": "per kg",
+      "discountPercentage": 25,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 22,
+      "name": "Apples (Kashmiri)",
+      "description": "Fresh Kashmiri apples, 1 kg",
+      "price": 2.8,
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&h=500&fit=crop",
+      "category": "Fresh Fruits",
+      "stock": 60,
+      "rating": 4.7,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 23,
+      "name": "Oranges",
+      "description": "Fresh oranges, 1 kg",
+      "price": 2.2,
+      "image": "https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg",
+      "category": "Fresh Fruits",
+      "stock": 70,
+      "rating": 4.5,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 24,
+      "name": "Pomegranate (Anar)",
+      "description": "Fresh pomegranate, 1 kg",
+      "price": 3.5,
+      "image": "https://www.aimsindia.com/wp-content/uploads/2022/06/Anar-1.jpg",
+      "category": "Fresh Fruits",
+      "stock": 40,
+      "rating": 4.6,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 25,
+      "name": "Full Cream Milk",
+      "description": "Fresh full cream milk, 1 liter",
+      "price": 1.2,
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/milk/r/r/h/-original-imah3btr2vepy78q.jpeg?q=70&crop=false",
+      "category": "Dairy Products",
+      "stock": 200,
+      "rating": 4.7,
+      "unit": "per liter",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 26,
+      "name": "Paneer (Cottage Cheese)",
+      "description": "Fresh paneer, 250g",
+      "price": 3.5,
+      "image": "https://tiimg.tistatic.com/fp/1/007/723/fresh-paneer-is-a-fresh-cheese-made-from-whole-milk-with-a-slightly-sweet-taste-061.jpg",
+      "category": "Dairy Products",
+      "stock": 80,
+      "rating": 4.8,
+      "unit": "per pack",
+      "discountPercentage": 15,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 27,
+      "name": "Curd (Dahi)",
+      "description": "Fresh homemade curd, 500g",
+      "price": 1.5,
+      "image": "https://www.bbassets.com/media/uploads/p/l/40262038_3-milky-mist-set-curd-creamy.jpg",
+      "category": "Dairy Products",
+      "stock": 100,
+      "rating": 4.6,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 28,
+      "name": "Butter",
+      "description": "Fresh butter, 100g",
+      "price": 1.8,
+      "image": "https://rukminim1.flixcart.com/image/300/300/kp4difk0/butter/g/j/n/cooking-box-heritage-original-imag3f5wrrgg846f.jpeg?q=90",
+      "category": "Dairy Products",
+      "stock": 90,
+      "rating": 4.5,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 29,
+      "name": "Eggs (Farm Fresh)",
+      "description": "Farm fresh eggs, 12 pieces",
+      "price": 1.8,
+      "image": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=500&h=500&fit=crop&q=80",
+      "category": "Dairy Products",
+      "stock": 150,
+      "rating": 4.7,
+      "unit": "per dozen",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 30,
+      "name": "Namkeen Mix",
+      "description": "Assorted namkeen mix, 500g",
+      "price": 2.5,
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/41d72c174666003.Y3JvcCwyMzc1LDE4NTcsNTU4LDMyMw.png",
+      "category": "Snacks & Namkeen",
+      "stock": 80,
+      "rating": 4.6,
+      "unit": "per pack",
+      "discountPercentage": 12,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 31,
+      "name": "Bhujia",
+      "description": "Crispy bhujia, 500g",
+      "price": 2.2,
+      "image": "https://evegro.com/wp-content/uploads/2020/10/Haldirams-Aloo-Bhujia-Zipper-Packet.jpg",
+      "category": "Snacks & Namkeen",
+      "stock": 70,
+      "rating": 4.5,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 32,
+      "name": "Mathri",
+      "description": "Crispy mathri, 500g",
+      "price": 2.8,
+      "image": "https://www.haldirams.com/media/catalog/product/cache/d792111afa4c25819db06da8dd2e361f/m/a/mathari.jpg",
+      "category": "Snacks & Namkeen",
+      "stock": 60,
+      "rating": 4.7,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 33,
+      "name": "Papad (Lijjat)",
+      "description": "Crispy papad, 200g",
+      "price": 1.5,
+      "image": "https://5.imimg.com/data5/DJ/CQ/MY-4828058/disco-sada-papad-500x500.jpg",
+      "category": "Snacks & Namkeen",
+      "stock": 100,
+      "rating": 4.4,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 34,
+      "name": "Tea Leaves (Assam)",
+      "description": "Premium Assam tea, 500g",
+      "price": 3.5,
+      "image": "https://m.media-amazon.com/images/I/617coQcwHFL.jpg",
+      "category": "Spices & Condiments",
+      "stock": 90,
+      "rating": 4.8,
+      "unit": "per pack",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 35,
+      "name": "Coffee Powder",
+      "description": "Filter coffee powder, 200g",
+      "price": 4.2,
+      "image": "https://globalcare.com.bd/public/uploads/all/MiZZvfqInxDUp92XiVYhB6gdSEWZW3zNjTolWcMo.jpg",
+      "category": "Spices & Condiments",
+      "stock": 75,
+      "rating": 4.7,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 36,
+      "name": "Sugar (White)",
+      "description": "Pure white sugar, 1 kg",
+      "price": 1.5,
+      "image": "https://m.media-amazon.com/images/I/810dK-eEBwL._SL1500_.jpg",
+      "category": "Spices & Condiments",
+      "stock": 150,
+      "rating": 4.5,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 37,
+      "name": "Salt (Iodized)",
+      "description": "Iodized table salt, 1 kg",
+      "price": 0.5,
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/300c0441330531.57a1be8bad4fc.jpg",
+      "category": "Spices & Condiments",
+      "stock": 200,
+      "rating": 4.4,
+      "unit": "per kg",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 38,
+      "name": "Detergent Powder",
+      "description": "Laundry detergent, 1 kg",
+      "price": 3.8,
+      "image": "https://m.media-amazon.com/images/I/81gQXhvfhiL._SL1500_.jpg",
+      "category": "Household Essentials",
+      "stock": 100,
+      "rating": 4.6,
+      "unit": "per pack",
+      "discountPercentage": 18,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 39,
+      "name": "Dish Soap",
+      "description": "Liquid dish soap, 750ml",
+      "price": 2.2,
+      "image": "https://i5.walmartimages.com/asr/e96e5e59-c790-4f0d-815f-668ca9590396_1.882a18e6567fa8920d36329993688fc9.jpeg",
+      "category": "Household Essentials",
+      "stock": 120,
+      "rating": 4.5,
+      "unit": "per bottle",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 40,
+      "name": "Toilet Cleaner",
+      "description": "Bathroom cleaner, 500ml",
+      "price": 2.5,
+      "image": "https://www.thespruce.com/thmb/Nus1gLeYcjhrnGg26FdZeI3D5a0=/2691x2691/filters:no_upscale():max_bytes(150000):strip_icc()/16a2c28a-09e6-45db-ae94-4f037ebd7295_1.b5ff694202700a1d7b335052c649cf5f-588b9ddf5f9b5874ee6dad7c.jpeg",
+      "category": "Household Essentials",
+      "stock": 80,
+      "rating": 4.4,
+      "unit": "per bottle",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 41,
+      "name": "Floor Cleaner",
+      "description": "Multi-surface cleaner, 1 liter",
+      "price": 2.8,
+      "image": "https://www.gosupps.com/media/catalog/product/7/1/71UTiwaGnAL.jpg",
+      "category": "Household Essentials",
+      "stock": 90,
+      "rating": 4.5,
+      "unit": "per bottle",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 42,
+      "name": "White Bread",
+      "description": "Fresh white bread, 400g",
+      "price": 1.2,
+      "image": "https://aranchmom.com/wp-content/uploads/2020/12/white-bread-4.jpg",
+      "category": "Bakery",
+      "stock": 100,
+      "rating": 4.5,
+      "unit": "per loaf",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 43,
+      "name": "Biscuits (Parle-G)",
+      "description": "Glucose biscuits, 500g",
+      "price": 1.8,
+      "image": "https://www.quicklly.com/upload_images/product/thumb/1588951001-parle-g-gold-biscuits.jpg",
+      "category": "Snacks & Namkeen",
+      "stock": 150,
+      "rating": 4.7,
+      "unit": "per pack",
+      "bestSeller": true,
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    },
+    {
+      "id": 44,
+      "name": "Rusk (Toast)",
+      "description": "Crispy rusk, 300g",
+      "price": 2.2,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/BK/EE/NB/2786423/rusk.jpg",
+      "category": "Snacks & Namkeen",
+      "stock": 70,
+      "rating": 4.4,
+      "unit": "per pack",
+      "createdAt": "2025-11-30T18:19:34.149Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "demo",
+      "password": "demo123",
+      "email": "demo@grocerease.com",
+      "name": "Demo User"
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "items": [],
+      "updatedAt": "2025-12-01T08:02:20.348Z",
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 2,
+          "name": "Mens Casual Premium Slim Fit T-Shirts ",
+          "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+          "price": 17.84,
+          "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+          "category": "Vegetables",
+          "stock": 62,
+          "rating": 4.1,
+          "unit": "per container",
+          "createdAt": "2025-11-29T14:47:37.284Z",
+          "quantity": 7
+        }
+      ],
+      "total": 137.368,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "09398864608",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-11-29T15:00:11.818Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 23,
+          "name": "Organic Milk",
+          "description": "Fresh organic whole milk, 1 gallon",
+          "price": 5.99,
+          "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400",
+          "category": "Dairy",
+          "stock": 40,
+          "rating": 4.6,
+          "unit": "gallon",
+          "createdAt": "2025-11-29T14:59:39.274Z",
+          "quantity": 4
+        },
+        {
+          "id": 2,
+          "name": "Mens Casual Premium Slim Fit T-Shirts ",
+          "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+          "price": 17.84,
+          "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+          "category": "Vegetables",
+          "stock": 107,
+          "rating": 4.1,
+          "unit": "per gallon",
+          "createdAt": "2025-11-29T15:12:05.011Z",
+          "quantity": 1
+        }
+      ],
+      "total": 45.980000000000004,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "09398864608",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-11-29T15:15:46.508Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Lapt...",
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "price": 87.96,
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+          "category": "Fruits",
+          "stock": 106,
+          "rating": 3.9,
+          "unit": "per pack",
+          "createdAt": "2025-11-30T06:31:04.498Z",
+          "quantity": 1
+        },
+        {
+          "id": 13,
+          "name": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) I...",
+          "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+          "price": 479.2,
+          "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_t.png",
+          "category": "Bakery",
+          "stock": 87,
+          "rating": 2.9,
+          "unit": "per pack",
+          "createdAt": "2025-11-30T06:31:04.499Z",
+          "quantity": 1
+        }
+      ],
+      "total": 623.876,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "lol",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-11-30T06:38:00.275Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Lapt...",
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "price": 87.96,
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+          "category": "Fruits",
+          "stock": 69,
+          "rating": 3.9,
+          "unit": "per gallon",
+          "createdAt": "2025-11-30T11:59:41.530Z",
+          "quantity": 1
+        }
+      ],
+      "total": 96.756,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "09398864608",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-11-30T16:23:21.937Z",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 2,
+          "name": "Toor Dal (Split Pigeon Peas)",
+          "description": "Fresh toor dal, rich in protein, 1 kg",
+          "price": 2.2,
+          "image": "https://img.freepik.com/premium-photo/toor-dal_57665-10232.jpg?size=626&ext=jpg",
+          "category": "Grains & Pulses",
+          "stock": 80,
+          "rating": 4.6,
+          "unit": "per kg",
+          "discountPercentage": 15,
+          "createdAt": "2025-11-30T18:19:34.149Z",
+          "quantity": 2
+        },
+        {
+          "id": 7,
+          "name": "Red Chili Powder",
+          "description": "Spicy red chili powder, 200g",
+          "price": 1.5,
+          "image": "https://i.etsystatic.com/25828839/r/il/1a9552/2624936318/il_1588xN.2624936318_bewq.jpg",
+          "category": "Spices & Condiments",
+          "stock": 110,
+          "rating": 4.5,
+          "unit": "per pack",
+          "createdAt": "2025-11-30T18:19:34.149Z",
+          "quantity": 1
+        },
+        {
+          "id": 26,
+          "name": "Paneer (Cottage Cheese)",
+          "description": "Fresh paneer, 250g",
+          "price": 3.5,
+          "image": "https://tiimg.tistatic.com/fp/1/007/723/fresh-paneer-is-a-fresh-cheese-made-from-whole-milk-with-a-slightly-sweet-taste-061.jpg",
+          "category": "Dairy Products",
+          "stock": 80,
+          "rating": 4.8,
+          "unit": "per pack",
+          "discountPercentage": 15,
+          "createdAt": "2025-11-30T18:19:34.149Z",
+          "quantity": 2
+        }
+      ],
+      "total": 14.190000000000001,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "9398864608",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "card",
+      "status": "completed",
+      "createdAt": "2025-12-01T03:51:28.342Z",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 3,
+          "name": "Moong Dal (Split Green Gram)",
+          "description": "Organic moong dal, 1 kg pack",
+          "price": 2.5,
+          "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2023/08/moong-dal.jpg",
+          "category": "Grains & Pulses",
+          "stock": 75,
+          "rating": 4.7,
+          "unit": "per kg",
+          "createdAt": "2025-11-30T18:19:34.149Z",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Chana Dal (Split Bengal Gram)",
+          "description": "Premium chana dal, 1 kg",
+          "price": 2.8,
+          "image": "https://healthynz.in/wp-content/uploads/2023/05/chana-dal.jpg",
+          "category": "Grains & Pulses",
+          "stock": 90,
+          "rating": 4.5,
+          "unit": "per kg",
+          "discountPercentage": 12,
+          "createdAt": "2025-11-30T18:19:34.149Z",
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "name": "Basmati Rice (Premium)",
+          "description": "Premium long grain basmati rice, 1 kg pack",
+          "price": 4.5,
+          "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&h=500&fit=crop",
+          "category": "Grains & Pulses",
+          "stock": 100,
+          "rating": 4.8,
+          "unit": "per kg",
+          "bestSeller": true,
+          "createdAt": "2025-11-30T18:19:34.135Z",
+          "quantity": 1
+        }
+      ],
+      "total": 10.780000000000001,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "9398864608",
+        "address": "bhaskar homes",
+        "city": "vijayawada",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-12-01T07:32:00.599Z",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 2,
+          "name": "Toor Dal (Split Pigeon Peas)",
+          "description": "Fresh toor dal, rich in protein, 1 kg",
+          "price": 2.2,
+          "image": "https://img.freepik.com/premium-photo/toor-dal_57665-10232.jpg?size=626&ext=jpg",
+          "category": "Grains & Pulses",
+          "stock": 80,
+          "rating": 4.6,
+          "unit": "per kg",
+          "discountPercentage": 15,
+          "createdAt": "2025-11-30T18:19:34.149Z",
+          "quantity": 1
+        }
+      ],
+      "total": 2.4200000000000004,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "09398864608",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-12-01T07:58:52.408Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "name": "Basmati Rice (Premium)",
+          "description": "Premium long grain basmati rice, 1 kg pack",
+          "price": 4.5,
+          "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&h=500&fit=crop",
+          "category": "Grains & Pulses",
+          "stock": 100,
+          "rating": 4.8,
+          "unit": "per kg",
+          "bestSeller": true,
+          "createdAt": "2025-11-30T18:19:34.135Z",
+          "quantity": 1
+        }
+      ],
+      "total": 4.95,
+      "shippingAddress": {
+        "fullName": "Demo User",
+        "email": "demo@grocerease.com",
+        "phone": "9398864608",
+        "address": "Siri Jewels 502 A",
+        "city": "NTR",
+        "zipCode": "520007"
+      },
+      "paymentMethod": "cash",
+      "status": "completed",
+      "createdAt": "2025-12-01T08:02:20.307Z",
+      "id": 8
+    }
+  ]
+}
