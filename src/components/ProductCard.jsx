@@ -1,6 +1,6 @@
 import { FaShoppingCart, FaStar, FaFire } from 'react-icons/fa';
 
-const ProductCard = ({ product, onAddToCart, isAuthenticated }) => {
+const ProductCard = ({ product, onAddToCart, isAuthenticated, isOffer = false }) => {
   // Convert USD to INR (1 USD ≈ 83 INR) - rounded to whole number
   const priceInINR = Math.round(product.price * 83);
   
@@ -14,7 +14,7 @@ const ProductCard = ({ product, onAddToCart, isAuthenticated }) => {
     : priceInINR;
 
   return (
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all overflow-hidden fade-in border border-gray-700 hover:border-primary-500/50 relative">
+    <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition-all overflow-hidden fade-in border border-gray-700 hover:border-primary-500/50 relative flex flex-col">
       {/* Discount Badge */}
       {hasOffer && (
         <div className="absolute top-4 right-4 z-10">
@@ -37,8 +37,8 @@ const ProductCard = ({ product, onAddToCart, isAuthenticated }) => {
         />
       </div>
 
-      {/* Product Info */}
-      <div className="p-5">
+      {/* Product Info - Using flexbox for consistent button alignment */}
+      <div className="p-5 flex flex-col flex-grow">
         <div className="mb-4">
           <h3 className="text-lg font-semibold text-white line-clamp-2 mb-2 min-h-[3rem]">
             {product.name}
@@ -73,10 +73,14 @@ const ProductCard = ({ product, onAddToCart, isAuthenticated }) => {
           )}
         </div>
 
-        {/* Add to Cart Button */}
+        {/* Add to Cart Button - Consistent alignment for both normal and offer products */}
         <button
           onClick={() => onAddToCart(product)}
-          className="w-full bg-primary-600 text-white py-3 px-4 rounded-lg hover:bg-primary-700 transition-colors flex items-center justify-center space-x-2 font-semibold shadow-lg hover:shadow-xl"
+          className={`w-full text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2 font-semibold shadow-lg hover:shadow-xl mt-auto ${
+            isOffer 
+              ? 'bg-orange-600 hover:bg-orange-700' 
+              : 'bg-primary-600 hover:bg-primary-700'
+          }`}
         >
           <FaShoppingCart />
           <span>Add to Cart</span>

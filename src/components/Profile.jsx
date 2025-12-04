@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaEdit, FaSave, FaTimes } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaEdit, FaSave, FaTimes, FaShoppingBag, FaCalendarAlt, FaRupeeSign } from 'react-icons/fa';
 
 const Profile = () => {
   const { user, isAuthenticated } = useAuth();
@@ -18,6 +19,8 @@ const Profile = () => {
     dateOfBirth: '',
     gender: '',
   });
+  const [orders, setOrders] = useState([]);
+  const [loadingOrders, setLoadingOrders] = useState(true);
 
   // Generate random profile data
   const generateRandomData = () => {
@@ -64,8 +67,37 @@ const Profile = () => {
         dateOfBirth: randomData.dateOfBirth,
         gender: randomData.gender,
       });
+      fetchOrders();
     }
   }, [user, isAuthenticated, navigate]);
+
+  const fetchOrders = async () => {
+    if (!user) return;
+    try {
+      setLoadingOrders(true);
+      const response = await axios.get(`http://localhost:3001/orders?userId=${user.id}`);
+      // Sort by date, newest first
+      const sortedOrders = response.data.sort((a, b) => 
+        new Date(b.createdAt) - new Date(a.createdAt)
+      );
+      setOrders(sortedOrders);
+    } catch (error) {
+      console.error('Error fetching orders:', error);
+    } finally {
+      setLoadingOrders(false);
+    }
+  };
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-IN', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -320,6 +352,113 @@ const Profile = () => {
             )}
           </div>
         </div>
+      </div>
+
+      {/* Order History Section */}
+      <div className="mt-12">
+        <div className="mb-8 text-center">
+          <div className="flex items-center justify-center space-x-3 mb-3">
+            <FaShoppingBag className="text-3xl text-primary-400" />
+            <h2 className="text-3xl md:text-4xl font-bold text-white">Order History</h2>
+          </div>
+          <p className="text-gray-300 text-lg">View your previous orders</p>
+        </div>
+
+        {loadingOrders ? (
+          <div className="text-center py-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-400 mx-auto mb-4"></div>
+            <p className="text-gray-300">Loading orders...</p>
+          </div>
+        ) : orders.length === 0 ? (
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg border border-gray-700 p-12 text-center">
+            <FaShoppingBag className="text-5xl text-gray-500 mx-auto mb-4" />
+            <p className="text-gray-300 text-xl font-medium mb-2">No orders yet</p>
+            <p className="text-gray-400 text-sm">Start shopping to see your order history here</p>
+          </div>
+        ) : (
+          <div className="space-y-6">
+            {orders.map((order) => (
+              <div
+                key={order.id}
+                className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg border border-gray-700 p-6 hover:border-primary-500/50 transition-colors"
+              >
+                {/* Order Header */}
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 pb-4 border-b border-gray-700">
+                  <div className="mb-3 md:mb-0">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <FaShoppingBag className="text-primary-400" />
+                      <h3 className="text-xl font-bold text-white">
+                        Order #{order.id}
+                      </h3>
+                    </div>
+                    <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                      <FaCalendarAlt className="text-primary-400" />
+                      <span>{formatDate(order.createdAt)}</span>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start md:items-end space-y-2">
+                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                      order.status === 'completed' 
+                        ? 'bg-green-900/50 text-green-300 border border-green-700'
+                        : 'bg-yellow-900/50 text-yellow-300 border border-yellow-700'
+                    }`}>
+                      {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
+                    </span>
+                    <div className="flex items-center space-x-1 text-white font-bold text-lg">
+                      <FaRupeeSign className="text-primary-400" />
+                      <span>{Math.round(order.total * 83).toLocaleString('en-IN')}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Order Items */}
+                <div className="space-y-3 mb-4">
+                  <h4 className="text-gray-300 font-semibold mb-2">Items:</h4>
+                  {order.items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center space-x-4 bg-gray-700/30 rounded-lg p-3"
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-16 h-16 object-cover rounded-lg"
+                        onError={(e) => {
+                          e.target.src = 'https://via.placeholder.com/64x64?text=Image';
+                        }}
+                      />
+                      <div className="flex-1">
+                        <p className="text-white font-medium">{item.name}</p>
+                        <p className="text-gray-400 text-sm">
+                          Quantity: {item.quantity} × ₹{Math.round(item.price * 83).toLocaleString('en-IN')}
+                        </p>
+                      </div>
+                      <p className="text-white font-semibold">
+                        ₹{Math.round((item.price * 83) * item.quantity).toLocaleString('en-IN')}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Shipping Address */}
+                {order.shippingAddress && (
+                  <div className="pt-4 border-t border-gray-700">
+                    <h4 className="text-gray-300 font-semibold mb-2 flex items-center space-x-2">
+                      <FaMapMarkerAlt className="text-primary-400" />
+                      <span>Shipping Address:</span>
+                    </h4>
+                    <p className="text-gray-400 text-sm">
+                      {order.shippingAddress.fullName}, {order.shippingAddress.address}, {order.shippingAddress.city}, {order.shippingAddress.zipCode}
+                    </p>
+                    <p className="text-gray-400 text-sm mt-1">
+                      Payment: {order.paymentMethod === 'card' ? 'Credit/Debit Card' : 'Cash on Delivery'}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
